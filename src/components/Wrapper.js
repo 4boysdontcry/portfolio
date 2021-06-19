@@ -11,15 +11,13 @@ import Main from './Main'
 const WholeWrapper = styled.div `
   width: 100%;
   background-color: #343a40;
-  display: flex;
-  justify-content: center;
-  align-items: center;
 `
+
 
 /* ****************** component ****************** */
 const Wrapper = () => {
   return (
-    <WholeWrapper>
+    <WholeWrapper className="flex">
       <Sidebar />
       <Main />
     </WholeWrapper>

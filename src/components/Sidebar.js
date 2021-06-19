@@ -1,21 +1,22 @@
 import React from 'react';
 import styled, { css } from 'styled-components'
 import 'bootstrap/dist/css/bootstrap.min.css';
-import { Navbar, Nav, Container } from 'react-bootstrap'
-import 'react-bootstrap-icons'
+import * as Icon from 'react-bootstrap-icons/dist';
 
+import { Navbar, Nav, Container } from 'react-bootstrap'
 
 /* ****************** styled ****************** */
 const Side = styled.div`
-  width: 20%;
+  position: fixed;
+  z-index: 99;
+  width: 280px;
   height: 100vh;
 `
 
-const Menu = styled.div`
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+const Logo = styled.div`
+  padding: 1em;
+  color: #f0f0f0;
+  border-bottom: 1px solid #f0f0f0;
 `
 
 
@@ -23,21 +24,16 @@ const Menu = styled.div`
 
 const Sidebar = () => {
   return (
-    <Side>
-      <Navbar bg="primary" variant="dark">
-        <Nav className="me-auto">
-          <Menu>
-            <Nav.Link href="#about">
-              <i className="bi bi-user" />
-              About Me
-            </Nav.Link>
-            <Nav.Link href="#skill">Skills</Nav.Link>
-            <Nav.Link href="#port">Portfolio</Nav.Link>
-            <Nav.Link href="#contact">Contact</Nav.Link>
-          </Menu>
+    <Side className="fixed">
+      <Navbar bg="dark" variant="dark" className="w-100 flex flex-xl-column">
+          <Logo className="m-3 font-weight-bold">Henry's Portfolio</Logo>
+        <Nav className="flex flex-xl-column bg-primary w-100 p-3 font-weight-bold rounded">
+          <Nav.Link href="#about"> <Icon.Person /> About Me</Nav.Link>
+          <Nav.Link href="#skill"><Icon.BarChartLine /> Skills</Nav.Link>
+          <Nav.Link href="#port"><Icon.CodeSlash /> Portfolio</Nav.Link>
+          <Nav.Link href="#contact"><Icon.Telephone /> Contact</Nav.Link>
         </Nav>
       </Navbar>
-
     </Side>
   );
 }
