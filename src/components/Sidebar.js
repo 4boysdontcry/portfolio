@@ -10,7 +10,7 @@ const Side = styled.div`
   position: fixed;
   z-index: 99;
   width: 280px;
-  height: 100vh;
+  height: 100%;
 `
 
 const Logo = styled.div`
@@ -25,7 +25,7 @@ const Logo = styled.div`
 const Sidebar = () => {
   return (
     <Side className="fixed">
-      <Navbar bg="dark" variant="dark" className="w-100 flex flex-xl-column">
+      <Navbar variant="dark" className="w-100 h-100 flex flex-xl-column">
           <Logo className="m-3 font-weight-bold">Henry's Portfolio</Logo>
         <Nav className="flex flex-xl-column bg-primary w-100 p-3 font-weight-bold rounded">
           <Nav.Link href="#about"> <Icon.Person /> About Me</Nav.Link>

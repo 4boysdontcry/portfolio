@@ -10,7 +10,7 @@ import Main from './Main'
 /* ****************** styled ****************** */
 const WholeWrapper = styled.div `
   width: 100%;
-  background-color: #343a40;
+  background-color: #1e1e2f;
 `
 
 

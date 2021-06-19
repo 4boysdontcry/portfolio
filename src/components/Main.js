@@ -4,6 +4,8 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 
 import Skills from './Skills'
 import Banner from './Banner'
+import Port from './Port'
+import Contact from './Contact'
 
 
 /* ****************** styled ****************** */
@@ -18,9 +20,11 @@ const MainWrapper = styled.div`
 /* ****************** component ****************** */
 const Main = () => {
   return (
-    <MainWrapper id="main">
+    <MainWrapper>
       <Banner />
       <Skills />
+      <Port />
+      <Contact />
     </MainWrapper>
   );
 }
