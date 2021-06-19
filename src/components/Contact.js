@@ -23,6 +23,7 @@ const ImgWrap = styled.div`
 
 const TxtBox = styled.div`
   text-align: right;
+  font-size: 1.25em;
 `
 
 /* ****************** component ****************** */
@@ -36,14 +37,14 @@ const Contact = () => {
       </Card.Header>
       <Card.Body>
         <ContWrap>
-          <ImgWrap>
-            <Image src="/img/logo.jpg" className="w-100 h-100" roundedCircle />
-          </ImgWrap>
           <TxtBox>
             <p><a href="phone:010-8724-7111">📞 +82(0)10-8724-7111</a></p>
             <p><a href="mailto:hgy02166@gmail.com">📬 hgy02166@gmail.com</a></p>
             <p><a href="https://instagram.com/4boysdontcry"><i className="fa fa-instagram" /> 4boysdontcry</a></p>
           </TxtBox>
+          <ImgWrap>
+            <Image src="/img/logo.jpg" className="w-100 h-100" roundedCircle />
+          </ImgWrap>
         </ContWrap>
       </Card.Body>
     </Card>
