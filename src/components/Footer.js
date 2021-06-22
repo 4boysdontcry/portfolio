@@ -15,7 +15,7 @@ const FooterWrapper = styled.div`
   color: #f0f0f0;
 `
 
-const Tag = styled.h5`
+const Tag = styled.a`
   font-size: 1.5em;
 `
 

@@ -49,8 +49,8 @@ const Contact = () => {
       <Card.Body>
         <ContWrap>
           <TxtBox>
-            <p><a href="phone:010-8724-7111">📞 +82(0)10-8724-7111</a></p>
-            <p><a href="mailto:hgy02166@gmail.com">📬 hgy02166@gmail.com</a></p>
+            <p><a href="phone:010-8724-7111"><i className="fa fa-phone" /> +82(0)10-8724-7111</a></p>
+            <p><a href="mailto:hgy02166@gmail.com"><i className="fa fa-envelope" /> hgy02166@gmail.com</a></p>
             <p><a href="https://instagram.com/4boysdontcry"><i className="fa fa-instagram" /> 4boysdontcry</a></p>
           </TxtBox>
           <ImgWrap>

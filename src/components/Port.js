@@ -51,7 +51,7 @@ const Bt = styled.button`
 const Subject = styled.h4`
   font-size: 2em;
   border-bottom: 1px solid #f0f0f0;
-  @media screen and (max-width: 992px) {
+  @media screen and (max-width: 768px) {
     font-size: 1em;
   }
   @media screen and (max-width: 574px) {
@@ -62,7 +62,7 @@ const Title = styled.h3`
   font-size: 3.125em;
   font-weight: bold;
   padding: .125em 0;
-  @media screen and (max-width: 992px) {
+  @media screen and (max-width: 768px) {
     font-size: 1.25em;
   }
   @media screen and (max-width: 574px) {
