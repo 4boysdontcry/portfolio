@@ -2,19 +2,77 @@ import React from 'react';
 import styled, { css } from 'styled-components'
 import 'bootstrap/dist/css/bootstrap.min.css';
 
-import { Carousel, Image, Badge } from 'react-bootstrap'
+import { Carousel, Image, Badge, Card, Button } from 'react-bootstrap'
 
 
 /* ****************** styled ****************** */
 const PortWrapper = styled.div`
   width: 100%;
-  height: 400px;
+  /* max-height: 400px; */
   margin-bottom: 2em;
 `
 const ImgWrap = styled.div`
-  width: 60%;
-  margin: 0 auto;
-  height: 400px;
+  width: 100%;
+  max-height: 400px;
+`
+
+const ContentWrap = styled.div`
+  width: 70%;
+  height: 70%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  padding: .5em;
+  background-color: #00000050;
+  border-radius: 10px;
+`
+const Img = styled.img`
+  width: 100%;
+  max-height: 400px;
+`
+const Btn = styled.button`
+  @media screen and (max-width: 574px) {
+    display: none;
+  }
+`
+const Bt = styled.button`
+  display: none;
+  @media screen and (max-width: 574px) {
+    display: inline-block;
+  }
+`
+
+const Subject = styled.h4`
+  font-size: 2em;
+  border-bottom: 1px solid #f0f0f0;
+  @media screen and (max-width: 992px) {
+    font-size: 1em;
+  }
+  @media screen and (max-width: 574px) {
+    font-size: .725em;
+  }
+`
+const Title = styled.h3`
+  font-size: 3.125em;
+  font-weight: bold;
+  padding: .125em 0;
+  @media screen and (max-width: 992px) {
+    font-size: 1.25em;
+  }
+  @media screen and (max-width: 574px) {
+    font-size: 1em;
+  }
+`
+const BgWrap = styled.div`
+  @media screen and (max-width: 574px) {
+    font-size: .5em;
+  }
 `
 
 
@@ -22,41 +80,76 @@ const ImgWrap = styled.div`
 const Port = () => {
   return (
     <PortWrapper id="port">
-      <Carousel>
-  <Carousel.Item interval={5000}>
-    <ImgWrap>
-      <Image className="d-block w-100 h-100 rounded" fluid src="/img/back.jpg" alt="First slide" />
-    </ImgWrap>
-    <Carousel.Caption>
-      <h3>LGe clone Coding</h3>
-        <Badge bg="primary">HTML5</Badge>{' '}
-        <Badge bg="success">CSS3</Badge>
-      <p>HTML5와 CSS3, 약간의 jQuery를 이용해 LG전자의 홈페이지를 제작했습니다.</p>
-    </Carousel.Caption>
-  </Carousel.Item>
+      <Card bg="dark" text="light" className="p-2">
+      <Card.Header className="font-weight-bold"><Card.Title>Portfolio</Card.Title></Card.Header>
+      <Card.Body>
+        <Carousel>
+          <Carousel.Item interval={5000}>
+            <ImgWrap>
+              <Img className="d-block rounded" fluid src="/img/back.jpg" alt="First slide" />
+            </ImgWrap>
+            <ContentWrap>
+              <Subject>Publishing</Subject>
+                <div>
+                  <Title>LGe clone Coding</Title>
+                  <BgWrap>
+                    <Badge variant="danger" className="m-1">HTML5</Badge>
+                    <Badge variant="primary" className="m-1">CSS3</Badge>
+                  </BgWrap>
+                </div>
+                <div>
+                  <Btn className="btn btn-primary m-1">github</Btn>
+                  <Btn className="btn btn-info m-1">visit site</Btn>
+                </div>
+            </ContentWrap>
+          </Carousel.Item>
 
-  <Carousel.Item interval={5000}>
-    <ImgWrap>
-      <Image className="d-block w-100 h-100 rounded" fluid src="/img/back.jpg" alt="Second slide" />
-    </ImgWrap>
-    <Carousel.Caption>
-      <h3>Firebase Chatting</h3>
-      <p>#HTML5 #CSS3 #Javascript #Firebase</p>
-      <p>구글 계정으로 로그인하여 방명록을 남기며, 채팅을 할 수 있습니다.</p>
-    </Carousel.Caption>
-  </Carousel.Item>
+          <Carousel.Item interval={5000}>
+            <ImgWrap>
+              <Img className="d-block rounded" fluid src="/img/back.jpg" alt="Second slide" />
+            </ImgWrap>
+            <ContentWrap>
+                <Subject>Front-End</Subject>
+                <div>
+                  <Title>Firebase Chatting</Title>
+                  <BgWrap>
+                    <Badge variant="danger" className="m-1">HTML5</Badge>
+                    <Badge variant="primary" className="m-1">CSS3</Badge>
+                    <Badge variant="warning" className="m-1">JS</Badge>
+                    <Badge variant="warning" className="m-1">Firebase</Badge>
+                  </BgWrap>
+                </div>
+                <div>
+                  <Btn className="btn btn-primary m-1">github</Btn>
+                  <Btn className="btn btn-info m-1">visit site</Btn>
+                </div>
+            </ContentWrap>
+          </Carousel.Item>
 
-  <Carousel.Item interval={5000}>
-    <ImgWrap>
-      <Image className="d-block w-100 h-100 rounded" fluid src="/img/back.jpg" alt="Third slide" />
-    </ImgWrap>
-    <Carousel.Caption>
-      <h3>Third slide label</h3>
-      <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
-    </Carousel.Caption>
-  </Carousel.Item>
+          <Carousel.Item interval={5000}>
+            <ImgWrap>
+              <Img className="d-block rounded" fluid src="/img/back.jpg" alt="Third slide" />
+            </ImgWrap>
+            <ContentWrap>
+                <Subject>Front-End</Subject>
+                <div>
+                <Title>Today's weather</Title>
+                  <BgWrap>
+                    <Badge variant="success" className="m-1">Vue.js</Badge>
+                    <Badge variant="primary" className="m-1">SCSS</Badge>
+                  </BgWrap>
+                </div>
+                <div>
+                  <Btn className="btn btn-primary m-1">github</Btn>
+                  <Btn className="btn btn-info m-1">visit site</Btn>
+                </div>
+            </ContentWrap>
+          </Carousel.Item>
 
-</Carousel>
+        </Carousel>
+        </Card.Body>
+          <Bt className="btn btn-info m-1 ">more detail</Bt>
+      </Card>
     </PortWrapper>
   );
 }

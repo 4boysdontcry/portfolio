@@ -11,9 +11,7 @@ import Contact from './Contact'
 /* ****************** styled ****************** */
 const MainWrapper = styled.div`
   width: 100%;
-  padding: 97px 1em 1em 1em;
-  padding-left: 280px;
-  height: 6000px;
+  padding: 1em;
 `
 
 

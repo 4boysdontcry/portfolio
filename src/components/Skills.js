@@ -12,9 +12,16 @@ const SkillWrapper = styled.div`
   align-items: center;
   justify-content: space-between;
   margin-bottom: 2em;
+  @media screen and (max-width: 768px) {
+    flex-direction: column;
+    align-items: center;
+  }
 `
 const CardWrap = styled.div`
-  width: 33.3333%
+  width: 33.3333%;
+  @media screen and (max-width: 768px) {
+    width: 100%;
+  }
 `
 
 

@@ -7,7 +7,8 @@ import { Col, Image, Card } from 'react-bootstrap'
 
 /* ****************** styled ****************** */
 const ContWrapper = styled.div`
-
+  width: 100%;
+  margin-bottom: 2em;
 `
 
 const ContWrap = styled.div`
@@ -19,18 +20,28 @@ const ContWrap = styled.div`
 const ImgWrap = styled.div`
   width: 200px;
   height: 200px;
+  @media screen and (max-width: 768px) {
+    width: 150px;
+    height: 150px;
+  }
+  @media screen and (max-width: 574px) {
+    display: none;
+  }
 `
 
 const TxtBox = styled.div`
   text-align: right;
   font-size: 1.25em;
+  @media screen and (max-width: 574px) {
+    text-align: center;
+  }
 `
 
 /* ****************** component ****************** */
 
 const Contact = () => {
   return (
-    <ContWrapper>
+    <ContWrapper id="contact">
     <Card bg="dark" text="light">
       <Card.Header>
         <Card.Title>Contact</Card.Title>
