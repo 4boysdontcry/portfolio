@@ -28,6 +28,9 @@ const Img = styled.img`
   height: 30px;
   border-radius: 50%;
   margin-right: 1em;
+  @media screen and (max-width: 768px) {
+    display: none;
+  }
 `
 
 const NaviWrap = styled.div`
@@ -41,9 +44,7 @@ const NaviWrap = styled.div`
 `
 
 const NaviLogo = styled.div`
-  @media screen and (max-width: 768px) {
-    display: none;
-  }
+  
 `
 
 /* ****************** component ****************** */
@@ -53,13 +54,13 @@ const Header = () => {
   return (
     <HeaderWrapper>
       <Navbar bg="primary" variant="dark" className="justify-content-between">
-        <BtMobile className="fa fa-bars" />
           <NaviLogo>
             <Navbar.Brand href="#main">
               <Img src="/img/logo.jpg" className="d-inline-block align-top" />
               Henry's Portfolio
             </Navbar.Brand>
           </NaviLogo>
+          <BtMobile className="fa fa-bars" />
           <NaviWrap>
             <Nav.Link href="/home">Main</Nav.Link>
             <Nav.Link href="/resume">Resume</Nav.Link>

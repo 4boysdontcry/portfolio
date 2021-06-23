@@ -20,7 +20,6 @@ const MainWrapper = styled.div`
 const Main = () => {
   return (
     <MainWrapper>
-      <Header />
       <Banner />
       <Skills />
       <Port />
