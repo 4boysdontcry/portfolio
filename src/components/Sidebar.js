@@ -11,14 +11,19 @@ const MenuBar = styled.div`
   z-index: 99;
   width: 20%;
   height: 100%;
+  background-image: linear-gradient(to bottom, #fff, #e9e9e9);
   @media screen and (max-width: 1200px) {
     display: none;
   }
 `
 
+const bgColor = {
+  "backgroundColor": "#414141"
+}
+
 const Logo = styled.div`
   padding: 1em;
-  color: #f0f0f0;
+  color: #121212;
   border-bottom: 1px solid #f0f0f0;
   font-size: 1.125em;
   display: flex;
@@ -52,18 +57,19 @@ const Content = styled.div`
   }
 `
 
+
 /* ****************** component ****************** */
 
 const Sidebar = () => {
   return (
     <div>
       <MenuBar>
-        <Navbar variant="dark" className="w-100 h-100 flex flex-xl-column">
+        <Navbar variant="light" className="w-100 h-100 flex flex-xl-column">
             <Logo className="m-3 font-weight-bold">
               <Img src="/img/logo.jpg" className="d-inline-block align-top" />
               Henry's Portfolio
             </Logo>
-          <Nav className="flex flex-xl-column bg-primary w-100 p-3 font-weight-bold rounded">
+          <Nav className="flex flex-xl-column w-100 p-3 font-weight-bold rounded"  style={bgColor}>
             <Nav.Link href="/"> <Icon.Globe /> Main</Nav.Link>
             <Nav.Link href="/resume"><Icon.FileEarmarkPerson /> Resume</Nav.Link>
             <Nav.Link href="/port"><Icon.CodeSlash /> Portfolio</Nav.Link>
