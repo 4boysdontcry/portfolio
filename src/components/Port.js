@@ -2,14 +2,14 @@ import React from 'react';
 import styled, { css } from 'styled-components'
 import 'bootstrap/dist/css/bootstrap.min.css';
 
-import { Carousel, Image, Badge, Card, Button } from 'react-bootstrap'
+import { Carousel, Image, Badge, Card, Button, Nav } from 'react-bootstrap'
 
 
 /* ****************** styled ****************** */
 const PortWrapper = styled.div`
   width: 100%;
   /* max-height: 400px; */
-  margin-bottom: 2em;
+  margin-bottom: 1.5em;
 `
 const ImgWrap = styled.div`
   width: 100%;
@@ -36,15 +36,16 @@ const Img = styled.img`
   width: 100%;
   max-height: 400px;
 `
-const Btn = styled.button`
-  @media screen and (max-width: 574px) {
+const BtnWrap = styled.div`
+  @media screen and (max-width: 478px) {
     display: none;
   }
 `
-const Bt = styled.button`
+const BtWrap = styled.div`
   display: none;
-  @media screen and (max-width: 574px) {
-    display: inline-block;
+  text-align: center;
+  @media screen and (max-width: 478px) {
+    display: block;
   }
 `
 
@@ -97,10 +98,10 @@ const Port = () => {
                     <Badge variant="primary" className="m-1">CSS3</Badge>
                   </BgWrap>
                 </div>
-                <div>
-                  <Btn className="btn btn-primary m-1">github</Btn>
-                  <Btn className="btn btn-info m-1">visit site</Btn>
-                </div>
+                <BtnWrap>
+                  <Button href="https://github.com/" className="btn btn-primary m-1">github</Button>
+                  <Button href="https://github.com/" className="btn btn-info m-1">visit site</Button>
+                </BtnWrap>
             </ContentWrap>
           </Carousel.Item>
 
@@ -119,10 +120,10 @@ const Port = () => {
                     <Badge variant="warning" className="m-1">Firebase</Badge>
                   </BgWrap>
                 </div>
-                <div>
-                  <Btn className="btn btn-primary m-1">github</Btn>
-                  <Btn className="btn btn-info m-1">visit site</Btn>
-                </div>
+                <BtnWrap>
+                  <Button href="https://github.com/" className="btn btn-primary m-1">github</Button>
+                  <Button href="https://github.com/" className="btn btn-info m-1">visit site</Button>
+                </BtnWrap>
             </ContentWrap>
           </Carousel.Item>
 
@@ -139,16 +140,18 @@ const Port = () => {
                     <Badge variant="primary" className="m-1">SCSS</Badge>
                   </BgWrap>
                 </div>
-                <div>
-                  <Btn className="btn btn-primary m-1">github</Btn>
-                  <Btn className="btn btn-info m-1">visit site</Btn>
-                </div>
+                <BtnWrap>
+                  <Button href="https://github.com/" className="btn btn-primary m-1">github</Button>
+                  <Button href="https://github.com/" className="btn btn-info m-1">visit site</Button>
+                </BtnWrap>
             </ContentWrap>
           </Carousel.Item>
 
         </Carousel>
         </Card.Body>
-          <Bt className="btn btn-info m-1 ">more detail</Bt>
+          <BtWrap>
+            <Button href="/port" variant="info" size="lg" className="m-1">SEE MORE</Button>
+          </BtWrap>
       </Card>
     </PortWrapper>
   );

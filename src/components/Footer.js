@@ -16,7 +16,7 @@ const FooterWrapper = styled.div`
 `
 
 const Tag = styled.a`
-  font-size: 1.5em;
+  font-size: 1.725em;
 `
 
 
@@ -25,7 +25,7 @@ const Footer = () => {
   return (
     <FooterWrapper>
         <Tag href="https://github.com/4boysdontcry" target="blank"><Icon.Github /></Tag>
-        <p>&copy; Made by Henry </p>
+        <p>&copy;</p>
     </FooterWrapper>
   );
 }

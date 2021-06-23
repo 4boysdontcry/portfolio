@@ -11,7 +11,7 @@ const SkillWrapper = styled.div`
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin-bottom: 2em;
+  margin-bottom: 1.5em;
   @media screen and (max-width: 768px) {
     flex-direction: column;
     align-items: center;

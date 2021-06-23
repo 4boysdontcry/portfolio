@@ -1,7 +1,6 @@
 import React from 'react';
 import styled, { css } from 'styled-components'
 import 'bootstrap/dist/css/bootstrap.min.css';
-import { Navbar, Container, FormControl, Button } from 'react-bootstrap'
 
 import Sidebar from './Sidebar'
 import Main from './Main'

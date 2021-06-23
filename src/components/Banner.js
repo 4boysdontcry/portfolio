@@ -3,12 +3,12 @@ import styled, { css } from 'styled-components'
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'react-bootstrap-icons'
 
-import { Image, Button, Card } from 'react-bootstrap'
+import { Image, Button, Card, Nav } from 'react-bootstrap'
 
 /* ****************** styled ****************** */
 const BannerWrapper = styled.div`
   width: 100%;
-  margin-bottom: 2em;
+  margin-bottom: 1.5em;
 `
 const BannerWrap = styled.div`
   width: 100%;
@@ -75,7 +75,7 @@ const Banner = () => {
               <br />
               좋은 코드를 위해 배우기를 멈추지 않는 개발자입니다.
             </Desc>
-            <Button variant="info">Resume</Button>
+            <Button href="/resume" variant="info">Resume</Button>
           </TxtWrap>
         </BannerWrap>
         </Card.Body>

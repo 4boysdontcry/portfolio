@@ -2,8 +2,9 @@ import React from 'react';
 import styled, { css } from 'styled-components'
 import 'bootstrap/dist/css/bootstrap.min.css';
 
-import Skills from './Skills'
+import Header from './Header'
 import Banner from './Banner'
+import Skills from './Skills'
 import Port from './Port'
 import Contact from './Contact'
 
@@ -19,6 +20,7 @@ const MainWrapper = styled.div`
 const Main = () => {
   return (
     <MainWrapper>
+      <Header />
       <Banner />
       <Skills />
       <Port />

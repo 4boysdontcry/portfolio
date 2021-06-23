@@ -8,7 +8,7 @@ import { Col, Image, Card } from 'react-bootstrap'
 /* ****************** styled ****************** */
 const ContWrapper = styled.div`
   width: 100%;
-  margin-bottom: 2em;
+  margin-bottom: 1.5em;
 `
 
 const ContWrap = styled.div`
