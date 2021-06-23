@@ -1,0 +1,12 @@
+.footer-wrapper {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  background-color: transparent;
+  text-align: center;
+}
+
+.copy {
+  color: #00000039;
+  font-size: .875em;
+}

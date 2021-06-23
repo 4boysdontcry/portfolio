@@ -6,27 +6,15 @@ import * as Icon from 'react-bootstrap-icons/dist';
 import {  } from 'react-bootstrap'
 
 /* ****************** styled ****************** */
-const FooterWrapper = styled.div`
-  width: 100%;
-  height: 100px;
-  border-top: 1px solid #333;
-  text-align: center;
-  padding: 1em;
-  color: #f0f0f0;
-`
-
-const Tag = styled.a`
-  font-size: 1.725em;
-`
+import '../css/footer.css'
 
 
 /* ****************** Compornent ****************** */
 const Footer = () => {
   return (
-    <FooterWrapper>
-        <Tag href="https://github.com/4boysdontcry" target="blank"><Icon.Github /></Tag>
-        <p>&copy;</p>
-    </FooterWrapper>
+    <div className="footer-wrapper">
+      <p className="copy">&copy; Made with Henry</p>
+    </div>
   );
 }
 

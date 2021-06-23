@@ -1,0 +1,7 @@
+.side-wrapper {
+  position: fixed;
+  width: 20%;
+  height: 90vh;
+  padding: 1em;
+  bottom: 0;
+}

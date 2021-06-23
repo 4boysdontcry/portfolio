@@ -2,72 +2,25 @@ import React from 'react';
 import styled, { css } from 'styled-components'
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'react-bootstrap-icons'
-import * as Icon from 'react-bootstrap-icons/dist';
-
-import { Navbar, Nav } from 'react-bootstrap'
 
 /* ****************** styled ****************** */
-const HeaderWrapper = styled.div`
-  margin-bottom: 1.5em;
-  display: none;
-  @media screen and (max-width: 1200px) {
-    display: block;
-  }
-`
-const BtMobile = styled.i`
-  font-size: 2em;
-  color: #f0f0f0;
-  display: none;
-  @media screen and (max-width: 768px) {
-    display: block;
-  }
-`
+import '../css/header.css'
 
-const Img = styled.img`
-  width: 30px;
-  height: 30px;
-  border-radius: 50%;
-  margin-right: 1em;
-  @media screen and (max-width: 768px) {
-    display: none;
-  }
-`
-
-const NaviWrap = styled.div`
-  display: flex;
-  align-items: center;
-  justify-content: flex-end;
-  color: #f0f0f0;
-  @media screen and (max-width: 768px) {
-    display: none;
-  }
-`
-
-const NaviLogo = styled.div`
-  
-`
 
 /* ****************** component ****************** */
 
 const Header = () => {
 
   return (
-    <HeaderWrapper>
-      <Navbar bg="primary" variant="dark" className="justify-content-between">
-          <NaviLogo>
-            <Navbar.Brand href="#main">
-              <Img src="/img/logo.jpg" className="d-inline-block align-top" />
-              Henry's Portfolio
-            </Navbar.Brand>
-          </NaviLogo>
-          <BtMobile className="fa fa-bars" />
-          <NaviWrap>
-            <Nav.Link href="/home">Main</Nav.Link>
-            <Nav.Link href="/resume">Resume</Nav.Link>
-            <Nav.Link href="/port">Portfolio</Nav.Link>
-          </NaviWrap>
-      </Navbar>
-    </HeaderWrapper>
+    <div className="header-wrapper">
+      <div className="header-wrap">
+        <div className="logo-wrapper">
+          <img src="/img/logo.jpg" className="d-inline-block align-top" />
+          <h1>Henry's Portfolio</h1>
+        </div>
+        <a href="https://github.com/4boysdontcry"><i className="fa fa-github" /></a>
+      </div>
+    </div>
   );
 }
 

@@ -1,0 +1,38 @@
+.header-wrapper{
+  position: fixed;
+  width: 100%;
+  padding: 2em;
+  background-color: transparent;
+  display: block;
+}
+.header-wrap {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin-right: 1em;
+}
+h1 {
+  font-size: 1.725em;
+}
+
+a {
+  font-size: 2.5em;
+}
+
+
+
+@media screen and (max-width: 768px) {
+
+}

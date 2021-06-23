@@ -8,10 +8,10 @@ import { Card, ProgressBar } from 'react-bootstrap'
 /* ****************** styled ****************** */
 const SkillWrapper = styled.div`
   width: 100%;
+  height: 100vh;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin-bottom: 1.5em;
   @media screen and (max-width: 768px) {
     flex-direction: column;
     align-items: center;
@@ -35,11 +35,11 @@ const Skills = () => {
           <Card.Body>
             <Card.Text>
             <Card.Text>HTML5</Card.Text>
-            <ProgressBar className="m-3" variant="danger" animated now={80} />
+            <ProgressBar className="m-3" variant="dark" animated now={80} />
             <Card.Text>CSS3</Card.Text>
-            <ProgressBar className="m-3" variant="primary" animated now={80} />
+            <ProgressBar className="m-3" variant="dark" animated now={80} />
             <Card.Text>Javascript</Card.Text>
-            <ProgressBar className="m-3" variant="warning" animated now={70} />
+            <ProgressBar className="m-3" variant="dark" animated now={70} />
             </Card.Text>
           </Card.Body>
         </Card>
@@ -50,11 +50,11 @@ const Skills = () => {
           <Card.Body>
             <Card.Text>
             <Card.Text>React </Card.Text>
-            <ProgressBar className="m-3" variant="primary" animated now={60} />
+            <ProgressBar className="m-3" variant="dark" animated now={60} />
             <Card.Text>Vue.js </Card.Text>
-            <ProgressBar className="m-3" variant="success" animated now={50} />
+            <ProgressBar className="m-3" variant="dark" animated now={50} />
             <Card.Text>Firebase </Card.Text>
-            <ProgressBar className="m-3" variant="warning" animated now={60} />
+            <ProgressBar className="m-3" variant="dark" animated now={60} />
             </Card.Text>
           </Card.Body>
         </Card>
@@ -65,11 +65,11 @@ const Skills = () => {
           <Card.Body>
             <Card.Text>
             <Card.Text>mySQL</Card.Text>
-            <ProgressBar className="m-3" variant="info" animated now={50} />
+            <ProgressBar className="m-3" variant="dark" animated now={50} />
             <Card.Text>node.js </Card.Text>
-            <ProgressBar className="m-3" variant="success" animated now={50} />
+            <ProgressBar className="m-3" variant="dark" animated now={50} />
             <Card.Text>AWS </Card.Text>
-            <ProgressBar className="m-3" variant="primary" animated now={40} />
+            <ProgressBar className="m-3" variant="dark" animated now={40} />
             </Card.Text>
           </Card.Body>
         </Card>
