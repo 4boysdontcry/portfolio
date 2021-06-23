@@ -1,5 +1,5 @@
 .footer-wrapper {
-  position: absolute;
+  position: fixed;
   bottom: 0;
   right: 0;
   background-color: transparent;
@@ -9,4 +9,5 @@
 .copy {
   color: #00000039;
   font-size: .875em;
+  padding: 1em;
 }

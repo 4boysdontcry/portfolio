@@ -14,7 +14,12 @@ import '../css/sidebar.css'
 const Sidebar = () => {
   return (
     <div className="side-wrapper">
-      
+      <div className="bar">
+        <div className="box"><p className="title">HOME</p></div>
+        <div className="box"><p className="title">SKILLS</p></div>
+        <div className="box"><p className="title">PORTFOLIO</p></div>
+        <div className="box"><p className="title">CONTACT</p></div>
+      </div>
     </div>
   );
 }

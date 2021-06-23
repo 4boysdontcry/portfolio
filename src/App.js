@@ -1,9 +1,11 @@
 import React, { useState, useCallback, useEffect, useMemo } from 'react'
 import Container from 'react-bootstrap/Container'
 import styled, { css } from 'styled-components'
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 import './scss/App.scss'
-import 'bootstrap/dist/css/bootstrap.min.css';
+import './css/app.css'
+import './css/base.css'
 
 import Header from './components/Header'
 import Sidebar from './components/Sidebar'
@@ -19,7 +21,7 @@ const App = () => {
   // 애니메이션 자바스크립트 여기서
 	
 	return (
-    <div>
+    <div className="app-wrapper">
       <Header />
       <Sidebar />
       <Main />

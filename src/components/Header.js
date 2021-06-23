@@ -18,7 +18,11 @@ const Header = () => {
           <img src="/img/logo.jpg" className="d-inline-block align-top" />
           <h1>Henry's Portfolio</h1>
         </div>
-        <a href="https://github.com/4boysdontcry"><i className="fa fa-github" /></a>
+        <div className="icon-wrapper">
+          <a href="https://github.com/4boysdontcry" target="blank">
+           <i className="fa fa-github header-icon" />
+          </a>
+        </div>
       </div>
     </div>
   );

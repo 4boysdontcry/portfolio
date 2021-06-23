@@ -12,7 +12,9 @@ import '../css/main.css'
 const Main = () => {
   return (
     <div className="main-wrapper">
-      
+      <div className="main-wrap">
+        
+      </div>
     </div>
   );
 }

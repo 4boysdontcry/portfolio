@@ -4,6 +4,7 @@
   padding: 2em;
   background-color: transparent;
   display: block;
+  color: #feffff;
 }
 .header-wrap {
   width: 100%;
@@ -27,7 +28,7 @@ h1 {
   font-size: 1.725em;
 }
 
-a {
+.icon-wrapper {
   font-size: 2.5em;
 }
 
