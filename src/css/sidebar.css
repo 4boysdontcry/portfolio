@@ -24,6 +24,7 @@
 .title {
   position: absolute;
   bottom: 0;
+  padding: .5em;
 }
 
 .title.active .box {

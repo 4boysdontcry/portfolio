@@ -15,10 +15,10 @@ const Sidebar = () => {
   return (
     <div className="side-wrapper">
       <div className="bar">
-        <div className="box"><p className="title">HOME</p></div>
-        <div className="box"><p className="title">SKILLS</p></div>
-        <div className="box"><p className="title">PORTFOLIO</p></div>
-        <div className="box"><p className="title">CONTACT</p></div>
+        <div className="box"><a href="#main" className="title">HOME</a></div>
+        <div className="box"><a href="#skill" className="title">SKILLS</a></div>
+        <div className="box"><a href="#port" className="title">PORTFOLIO</a></div>
+        <div className="box"><a href="#contact" className="title">CONTACT</a></div>
       </div>
     </div>
   );

@@ -1,0 +1,24 @@
+.skill-wrapper{
+  width: 100%;
+  height: 100vh;
+  background-color: #bad1d0;
+}
+.skill-wrap {
+  width: 90%;
+  height: 100vh;
+  margin-left: auto;
+  padding: 2em;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.card-wrap {
+  width: 33.3333%;
+}
+
+
+
+@media screen and (max-width: 768px) {
+  
+}
