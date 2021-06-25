@@ -14,14 +14,17 @@ const Main = () => {
 		<div className="main-wrapper" id="main">
 			<div className="main-wrap">
 				<div className="text-wrap">
-					<h2 className="ment">
-						INTRO
-						<br />
-						DUCE
-					</h2>
-					<div className="arrow"></div>
-					<h2>FRONT-END DEVELOPER</h2>
-					<h3>황준택 </h3>
+					<div className="ment-wrapper">
+						<h2 className="ment">Hi, This is Henry 👋</h2>
+						{/* <h2 className="ment2">I'm FRONT-END DEVELOPER</h2> */}
+					</div>
+					<div className="subject-wrapper">
+						<p className="article">
+							안녕하세요, 프론트엔드 개발자 <span>황준택</span>입니다. <br />
+							효율적인 코드를 위해 공부하며, 더 좋은 UX를 위해 노력합니다.
+						</p>
+					</div>
+					<button className="bt-resume"><a href="#">Resume</a></button>
 				</div>
 			</div>
 		</div>

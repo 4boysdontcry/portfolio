@@ -1,22 +1,61 @@
 .skill-wrapper{
   width: 100%;
   height: 100vh;
-  background-color: #bad1d0;
+  background-color: #88bdbc;
+  color: #254e58;
 }
 .skill-wrap {
   width: 90%;
   height: 100vh;
-  margin-left: auto;
-  padding: 2em;
+  margin: 0 auto;
+  padding: 6em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.skill-wrap .card-wrapper {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.skill-wrap .card-wrap {
+  width: 32.3333%;
+  margin: 2%;
+  display: flex;
+  flex-direction: column;
+}
+.card-wrap .sub-title {
+  text-align: center;
+  font-size: 1.5em;
+  font-weight: bold;
+  color: #254e58;
+  margin-bottom: 1.5em;
+}
+
+.skill-wrap .title-wrap {
+  font-size: 3em;
+  color: #feffff;
+  font-weight: bolder;
+  margin-bottom: 2em;
+}
+
+.skill-wrap .lang-wrapper {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
+  margin-bottom: 1.5em;
 }
-
-.card-wrap {
-  width: 33.3333%;
+.lang-wrapper .lang-img {
+  max-width: 50px;
 }
-
+.lang-img img {
+  width: 100%;
+}
+.lang-wrapper .probar{
+  width: 100%;
+}
 
 
 @media screen and (max-width: 768px) {

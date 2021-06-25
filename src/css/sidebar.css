@@ -5,15 +5,16 @@
   padding: 1em;
   bottom: 0;
   color: #2b7a78;
+  z-index: 99;
 }
 
-.bar {
+.side-wrapper .bar {
   width: 1px;
   height: 100%;
   border-left: 2px solid #2b7a78;
 }
 
-.box {
+.side-wrapper .box {
   position: relative;
   width: 50px;
   height: 20%;
@@ -21,12 +22,13 @@
   text-align: center;
   font-weight: bold;
 }
-.title {
+.side-wrapper .title {
   position: absolute;
   bottom: 0;
   padding: .5em;
+  cursor: pointer;
 }
 
-.title.active .box {
+.side-wrapper .title.active .box {
   background-color: #def2f1;
 }

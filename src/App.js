@@ -5,7 +5,6 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 
 import './scss/App.scss'
 import './css/app.css'
-import './css/base.css'
 
 import Header from './components/Header'
 import Sidebar from './components/Sidebar'
