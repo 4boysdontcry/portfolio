@@ -56,7 +56,7 @@ const Skills = () => {
 								</div>
 								<div className="lang-wrapper">
 									<div className="lang-img">
-									<img src="/img/html.png" alt="vue.js" />
+									<img src="/img/vuejs.png" alt="vue.js" />
 									</div>
 									<ProgressBar className="m-3 probar" variant="info" animated now={80} />
 								</div>
