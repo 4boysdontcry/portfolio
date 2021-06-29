@@ -18,7 +18,7 @@ import Footer from './components/Footer'
 
 const App = () => {
   // 애니메이션 자바스크립트 여기서
-	
+
 	return (
     <div className="app-wrapper">
       <Header />

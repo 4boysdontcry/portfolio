@@ -84,3 +84,16 @@
 	border-right: 0 solid transparent;
 }
 
+.main-wrapper .ment .hand {
+  display: inline-block;
+  animation: shake 2.5s infinite;
+	}
+
+@keyframes shake {
+  0% {transform: rotate(0deg);}
+  20% {transform: rotate(13deg);}
+  24% {transform: rotate(-13deg);}
+  28% {transform: rotate(13deg);}
+  32% {transform: rotate(-13deg);}
+  36% {transform: rotate(0deg);}
+}

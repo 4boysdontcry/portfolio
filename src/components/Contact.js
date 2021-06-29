@@ -15,7 +15,12 @@ const Contact = () => {
   return (
     <div className="contact-wrapper">
       <div className="contact-wrap">
-        
+        <h3>CONTACT</h3>
+        <div className="call-wrapper">
+          <div className="call"><a callto="010-8724-7111"></a></div>
+          <div className="call"><a href=""></a></div>
+          <div className="call"><a href=""></a></div>
+        </div>
       </div>
     </div>
   );

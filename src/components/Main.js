@@ -10,13 +10,13 @@ import '../css/main.css'
 
 /* ****************** component ****************** */
 const Main = () => {
+
 	return (
 		<div className="main-wrapper" id="main">
 			<div className="main-wrap">
 				<div className="text-wrap">
 					<div className="ment-wrapper">
-						<h2 className="ment">Hi, This is Henry 👋</h2>
-						{/* <h2 className="ment2">I'm FRONT-END DEVELOPER</h2> */}
+						<h2 className="ment">Hi, This is Henry <span className="hand">👋</span></h2>
 					</div>
 					<div className="subject-wrapper">
 						<p className="article">
@@ -24,7 +24,7 @@ const Main = () => {
 							효율적인 코드를 위해 공부하며, 더 좋은 UX를 위해 노력합니다.
 						</p>
 					</div>
-					<button className="bt-resume"><a href="#">Resume</a></button>
+					<button className="bt-resume"><a href="/notion">Resume</a></button>
 				</div>
 			</div>
 		</div>
