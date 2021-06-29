@@ -26,14 +26,18 @@
   text-align: left;
   font-weight: bold;
 }
+.side-wrapper .box.active {
+  background-color: #17152a;
+  color: #17152a;
+  border: none;
+  transition: all 1s;
+  transform: scale(1.1);
+}
+
 .side-wrapper .title {
   position: absolute;
   bottom: -40%;
   left: 150%;
   padding: .5em;
   cursor: pointer;
-}
-
-.side-wrapper .title.active .box {
-  background-color: #def2f1;
 }
