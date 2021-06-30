@@ -16,11 +16,8 @@ const Bar = () => {
     <div className="bar-wrapper">
       <div className="skill-wrap">
 				<div className="card-wrapper">
-					<div className="card-wrap">
-						<Card.Text>
-							<Card.Text>
-								<h3 className="sub-title">Publishing</h3>
-							</Card.Text>
+					<div className="card-wrap" id="1">
+						<h3 className="sub-title">Publishing</h3>
 							<div className="lang-wrapper">
 							  <div className="lang-wrap">
   								<div className="lang-img">
@@ -41,13 +38,9 @@ const Bar = () => {
   								<ProgressBar className="m-3 probar" variant="info" animated now={70} />
   							</div>
 							</div>
-						</Card.Text>
 					</div>
-						<div className="card-wrap">
-							<Card.Text>
-								<Card.Text>
+						<div className="card-wrap" id="2">
 									<h3 className="sub-title">Front-End</h3>
-								</Card.Text>
 								<div className="lang-wrapper">
 								  <div className="lang-wrap">
   									<div className="lang-img">
@@ -68,13 +61,9 @@ const Bar = () => {
   									<ProgressBar className="m-3 probar" variant="info" animated now={60} />
   								</div>
 								</div>
-							</Card.Text>
 						</div>
-						<div className="card-wrap">
-							<Card.Text>
-								<Card.Text>
+						<div className="card-wrap" id="3">
 									<h3 className="sub-title">Back-End</h3>
-								</Card.Text>
 								<div className="lang-wrapper">
 								  <div className="lang-wrap">
   									<div className="lang-img">
@@ -95,7 +84,6 @@ const Bar = () => {
   									<ProgressBar className="m-3 probar" variant="info" animated now={60} />
   								</div>
 								</div>
-							</Card.Text>
 						</div>
 				</div>
 			</div>

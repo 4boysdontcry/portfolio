@@ -1,6 +1,7 @@
 .bar-wrapper {
-  width: 60%;
+  width: 50%;
   height: 100%;
+  padding: 2em;
 }
 
 .skill-wrap {
@@ -14,7 +15,7 @@
 
 .skill-wrap .card-wrapper {
   width: 100%;
-  margin: .5em 0;
+  height: 100%;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -22,22 +23,20 @@
 }
 .skill-wrap .card-wrap {
   width: 100%;
-  height: 32.3333%;
-  margin: 1%;
+  height: 29.3333%;
+  margin: 2% 0;
 }
 .card-wrap .sub-title {
   text-align: center;
   font-size: 1.5em;
   font-weight: bold;
   color: #254e58;
-  margin-bottom: 1em;
 }
 
 .skill-wrap .title-wrap {
   font-size: 2em;
   color: #feffff;
   font-weight: bolder;
-  margin-bottom: 1em;
 }
 .skill-wrap .lang-wrapper {
   display: flex;
@@ -47,13 +46,13 @@
 }
 .skill-wrap .lang-wrap {
   width: 100%;
+  height: 23%;
   display: flex;
-  align-items: flex-start;
+  align-items: center;
   justify-content: center;
-  margin-bottom: .5em;
 }
 .lang-wrap .lang-img {
-  max-width: 50px;
+  max-width: 40px;
 }
 .lang-img img {
   width: 100%;

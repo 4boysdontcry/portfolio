@@ -2,13 +2,23 @@
 	position: absolute;
 	top: 0;
 	right: 0;
-	width: 30%;
+	width: 50%;
 	height: 100%;
+	padding: 1.5em;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
 }
-.desc-wrapper .desc-wrap {
-	width: 100%;
+.desc-wrapper .title{
+	font-size: 1.325em;
+	color: #3aafa9;
+	font-weight: bold;
+}
+.desc-wrapper .desc-set{
+	font-size: 1.2em;
+	line-height: 2;
 }
 
-.desc-wrapper .title-wrap{
-	
-}
+.desc-wrapper:nth-child(2),
+.desc-wrapper:nth-child(3) {display: none;}
