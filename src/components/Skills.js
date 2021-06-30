@@ -5,19 +5,25 @@ import 'react-bootstrap-icons'
 
 import { Card, ProgressBar } from 'react-bootstrap'
 import Bar from './Bar'
+import SkillDesc from './SkillDesc'
 
 /* ****************** styled ****************** */
 import '../css/skills.css'
 
 /* ****************** component ****************** */
-const Skills = () => {
+const Skills = ({ lists }) => {
 	return (
-		<div className="skill-wrapper" id="skill">
-			<Bar />
-      {
-        
-      }
-		</div>
+    <div className="skill-container">
+      <div className="title-wrap">
+  				<h2 className="title">SKILLS</h2>
+  			</div>
+  		<div className="skill-wrapper" id="skill">
+  			<Bar />
+        {
+          lists.map(v => <SkillDesc lists={v} key={ v.id } /> )
+        }
+  		</div>
+    </div>
 	);
 }
 

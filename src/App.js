@@ -2,6 +2,7 @@ import React, { useState, useCallback, useEffect, useMemo } from 'react'
 import Container from 'react-bootstrap/Container'
 import styled, { css } from 'styled-components'
 import 'bootstrap/dist/css/bootstrap.min.css';
+import axios from 'axios';
 
 import './scss/App.scss'
 import './css/app.css'
@@ -18,13 +19,35 @@ import Footer from './components/Footer'
 
 const App = () => {
   // 애니메이션 자바스크립트 여기서
+  const [descChg, setDescChg] = useState([])
+  const [err, setErr] = useState(null)
+
+  useEffect( () => {
+    const asyncFn = async () => {
+      try{
+        const { data } = await axios('/json/skill.json')
+        setDescChg(data)
+      }
+      catch(err){
+        setErr(err)
+      }
+      finally{
+        return () => { console.log('end') }
+      }
+    }
+    asyncFn()
+  }, [])
+
+	const handleChange = query => {
+		setDescChg( descChg.click( v => v.title.includes(query) ) )
+	}
 
 	return (
     <div className="app-wrapper">
       <Header />
       <Sidebar />
       <Main />
-      <Skills />
+      <Skills handleChange={handleChange} lists={descChg} />
       <Port />
       <Contact />
       <Footer />
