@@ -26,6 +26,11 @@
   height: 29.3333%;
   margin: 2% 0;
 }
+.skill-wrap .card-wrap:hover .sub-title {
+  transition: all .5s;
+  transform: scale(1.1);
+  color: #feffff;
+}
 .card-wrap .sub-title {
   text-align: center;
   font-size: 1.5em;
@@ -57,10 +62,10 @@
 .lang-img img {
   width: 100%;
 }
-.lang-img img:hover {
+/* .lang-img img:hover {
   transition: all .5s;
   transform: scale(1.2);
-}
+} */
 .lang-wrap .probar{
   width: 100%;
 }
