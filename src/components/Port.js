@@ -22,7 +22,7 @@ const Port = () => {
 			<h3 className="title">PORTFOLIO</h3>
 			<div className="port-wrap">
 
-				<div className="port wow animate__fadeInUp">
+				<div className="port wow animate__fadeIn">
 					<div className="img-wrapper">
 						<img src="/img/lge.png" alt="" />
 					</div>
@@ -43,7 +43,7 @@ const Port = () => {
 					</div>
 				</div>
 
-				<div className="port wow animate__fadeInUp animate__delay-1s">
+				<div className="port wow animate__fadeIn animate__delay-1s">
 					<div className="img-wrapper">
 						<img src="/img/back.jpg" alt="" />
 					</div>
@@ -64,7 +64,7 @@ const Port = () => {
 				</div>
 
 
-				<div className="port wow animate__fadeInUp animate__delay-2s">
+				<div className="port wow animate__fadeIn animate__delay-2s">
 					<div className="img-wrapper">
 						<img src="/img/gbook.png" alt="" />
 					</div>
@@ -87,7 +87,7 @@ const Port = () => {
 
 			</div>
       <div className="bt-wrap">
-        <button className="bt-more">SEE MORE</button>
+        <button className="bt-more wow animate__fadeInUp">SEE MORE</button>
       </div>
 		</div>
 	);

@@ -12,3 +12,16 @@
   flex-direction: column;
   align-items: center;
 }
+.contact-wrap .title {
+  font-size: 3em;
+  font-weight: bold;
+  margin-bottom: 1em;
+}
+.contact-wrap .call-wrapper {
+  text-align: center;
+}
+.contact-wrap .call-wrapper > .call {
+  font-size: 1.25em;
+  font-weight: bold;
+  margin-bottom: 1em;
+}
