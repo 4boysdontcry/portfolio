@@ -16,15 +16,15 @@ const Main = () => {
 			<div className="main-wrap">
 				<div className="text-wrap">
 					<div className="ment-wrapper">
-						<h2 className="ment">Hi, This is Henry <span className="hand">👋</span></h2>
+						<h2 className="ment wow animate__backInDown">Hi, This is Henry <span className="hand">👋</span></h2>
 					</div>
-					<div className="subject-wrapper">
+					<div className="subject-wrapper wow animate__fadeInLeft animate__delay-1s">
 						<p className="article">
 							안녕하세요, 프론트엔드 개발자 <span>황준택</span>입니다. <br />
 							효율적인 코드를 위해 공부하며, 더 좋은 UX를 위해 노력합니다.
 						</p>
 					</div>
-					<button className="bt-resume"><a href="/notion">Resume</a></button>
+					<button className="bt-resume wow animate__heartBeat"><a href="/notion">Resume</a></button>
 				</div>
 			</div>
 		</div>

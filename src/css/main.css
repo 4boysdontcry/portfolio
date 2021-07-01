@@ -1,6 +1,6 @@
 .main-wrapper {
 	width: 100%;
-	height: 100vh;
+  height: 100vh;
 	background-color: #3aafa9;
 	color: #feffff;
 }
@@ -58,7 +58,10 @@
 	border-radius: 5px;
 	box-shadow: 3px 5px 10px rgba(0, 0, 0, 0.3);
 }
-
+.main-wrapper .bt-resume:hover {
+  transition: all .5s;
+  transform: scale(1.1);
+}
 
 .main-wrapper .arrow {
 	position: absolute;

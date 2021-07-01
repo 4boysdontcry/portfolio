@@ -1,7 +1,8 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import styled, { css } from 'styled-components'
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'react-bootstrap-icons'
+import WOW from 'wowjs'
 
 import { Card, ProgressBar } from 'react-bootstrap'
 
@@ -10,14 +11,19 @@ import '../css/skilldesc.css'
 
 /* ****************** component ****************** */
 const SkillDesc = ({lists:v}) => {
+
+  useEffect(() => {
+    new WOW.WOW().init();
+  }, []);
+
 	return (
-		<div className="desc-wrapper">
-			<div className="title-wrap">
+		<div className='desc-wrapper'>
+			<div className="title-wrap wow fadeInUp">
 				<h3 className="title">{ v.title }</h3>
 			</div>
 			<div className="desc-set">
-				<p className="desc1">{ v.desc1 }</p>
-				<p className="desc2">{ v.desc2 }</p>
+				<p className="desc1 wow fadeInLeft">{ v.desc1 }</p>
+				<p className="desc2 wow fadeInLeft">{ v.desc2 }</p>
 			</div>
 		</div>
 	);

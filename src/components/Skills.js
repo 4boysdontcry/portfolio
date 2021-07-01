@@ -20,7 +20,7 @@ const Skills = ({ lists }) => {
   		<div className="skill-wrapper" id="skill">
   			<Bar />
         {
-          lists.map(v => <SkillDesc lists={v} key={ v.id } /> )
+          lists.map(v => <SkillDesc className="wow fadeInUp" lists={v} key={ v.id } /> )
         }
   		</div>
     </div>

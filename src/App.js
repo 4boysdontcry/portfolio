@@ -3,6 +3,7 @@ import Container from 'react-bootstrap/Container'
 import styled, { css } from 'styled-components'
 import 'bootstrap/dist/css/bootstrap.min.css';
 import axios from 'axios';
+import WOW from 'wowjs'
 
 import './scss/App.scss'
 import './css/app.css'
@@ -21,6 +22,11 @@ const App = () => {
   // 애니메이션 자바스크립트 여기서
   const [descChg, setDescChg] = useState([])
   const [err, setErr] = useState(null)
+  
+  
+  useEffect(() => {
+    new WOW.WOW().init();
+  }, []);
 
   useEffect( () => {
     const asyncFn = async () => {

@@ -1,7 +1,9 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import styled, { css } from 'styled-components'
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'react-bootstrap-icons'
+import WOW from 'wowjs'
+
 
 import { Card, ProgressBar } from 'react-bootstrap'
 
@@ -12,12 +14,17 @@ import '../css/bar.css'
 
 /* ****************** component ****************** */
 const Bar = () => {
+
+  useEffect(() => {
+    new WOW.WOW().init();
+  }, []);
+
 	return (
 		<div className="bar-wrapper">
 			<div className="skill-wrap">
 				<div className="card-wrapper">
 				
-					<div className="card-wrap" id="1">
+					<div className="card-wrap wow animate__fadeIn" id="1">
 						<h3 className="sub-title">Publishing</h3>
 						<div className="lang-wrapper">
 							<div className="lang-wrap">
@@ -41,7 +48,7 @@ const Bar = () => {
 						</div>
 					</div>
 
-						<div className="card-wrap" id="2">
+						<div className="card-wrap wow animate__fadeIn animate__delay-1s" id="2">
 							<h3 className="sub-title">Front-End</h3>
 							<div className="lang-wrapper">
 								<div className="lang-wrap">
@@ -65,7 +72,7 @@ const Bar = () => {
 							</div>
 						</div>
 
-						<div className="card-wrap" id="3">
+						<div className="card-wrap wow animate__fadeIn animate__delay-2s" id="3">
 							<h3 className="sub-title">Back-End</h3>
 							<div className="lang-wrapper">
 								<div className="lang-wrap">
