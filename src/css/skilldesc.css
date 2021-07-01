@@ -11,13 +11,15 @@
 	justify-content: center;
 }
 .desc-wrapper .title{
-	font-size: 1.325em;
-	color: #3aafa9;
+	font-size: 1.25em;
+	color: #254e58;
 	font-weight: bold;
 }
 .desc-wrapper .desc-set{
-	font-size: 1.2em;
+	font-size: 1.3em;
 	line-height: 2;
+  color: #17152a;
+  font-weight: bold;
 }
 
 .desc-wrapper:nth-child(2),
