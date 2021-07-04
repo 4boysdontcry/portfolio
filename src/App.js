@@ -5,7 +5,6 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import axios from 'axios';
 import WOW from 'wowjs'
 
-import './scss/App.scss'
 import './css/app.css'
 
 import Header from './components/Header'

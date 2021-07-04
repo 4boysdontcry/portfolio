@@ -24,7 +24,7 @@ const Main = () => {
 							효율적인 코드를 위해 공부하며, 더 좋은 UX를 위해 노력합니다.
 						</p>
 					</div>
-					<button className="bt-resume wow animate__heartBeat"><a href="/notion">Resume</a></button>
+					<button className="bt-resume wow animate__heartBeat"><a href="https://www.notion.so/RESUME-5b9f93d48b104fd5b906b15fedcd16f0" target="_blank">Resume</a></button>
 				</div>
 			</div>
 		</div>
