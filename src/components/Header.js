@@ -14,10 +14,10 @@ const Header = () => {
   return (
     <div className="header-wrapper">
       <div className="header-wrap">
-        <div className="logo-wrapper">
+        <a className="logo-wrapper" href="/">
           <img src="/img/logo.jpg" className="d-inline-block align-top" />
           <h1>Henry's Portfolio</h1>
-        </div>
+        </a>
         <div className="icon-wrapper">
           <a href="https://github.com/4boysdontcry" target="blank">
            <i className="fa fa-github header-icon" />

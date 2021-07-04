@@ -17,7 +17,7 @@ const Contact = () => {
   }, []);
 
   return (
-    <div className="contact-wrapper">
+    <div className="contact-wrapper" id="contact">
       <div className="contact-wrap">
         <h3 className="title">CONTACT</h3>
         <div className="call-wrapper">

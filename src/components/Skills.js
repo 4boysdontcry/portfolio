@@ -13,7 +13,7 @@ import '../css/skills.css'
 /* ****************** component ****************** */
 const Skills = ({ lists }) => {
 	return (
-    <div className="skill-container">
+    <div className="skill-container" id="skills">
       <div className="title-wrap">
   				<h2 className="title">SKILLS</h2>
   			</div>

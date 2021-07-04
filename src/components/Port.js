@@ -18,7 +18,7 @@ const Port = () => {
   }, []);
 
 	return (
-		<div id="port" className="port-wrapper">
+		<div id="portfolio" className="port-wrapper">
 			<h3 className="title">PORTFOLIO</h3>
 			<div className="port-wrap">
 
@@ -43,7 +43,7 @@ const Port = () => {
 					</div>
 				</div>
 
-				<div className="port wow animate__fadeIn">
+				<div className="port wow animate__fadeInDown">
 					<div className="img-wrapper">
 						<img src="/img/back.jpg" alt="" />
 					</div>
