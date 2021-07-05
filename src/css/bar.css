@@ -31,6 +31,10 @@
   transform: scale(1.1);
   color: #feffff;
 }
+.skill-wrap .card-wrap.active .sub-title {
+  transform: scale(1.1);
+  color: #feffff;
+}
 .card-wrap .sub-title {
   text-align: center;
   font-size: 1.5em;

@@ -13,7 +13,7 @@ import '../css/bar.css'
 
 
 /* ****************** component ****************** */
-const Bar = () => {
+const Bar = ({ onBars }) => {
 
   useEffect(() => {
     new WOW.WOW().init();
@@ -24,7 +24,7 @@ const Bar = () => {
 			<div className="skill-wrap">
 				<div className="card-wrapper">
 				
-					<div className="card-wrap wow animate__fadeInLeft" id="1">
+					<div className="card-wrap wow animate__fadeInLeft" onClick={onBars} id="2">
 						<h3 className="sub-title">Publishing</h3>
 						<div className="lang-wrapper">
 							<div className="lang-wrap">
@@ -48,7 +48,7 @@ const Bar = () => {
 						</div>
 					</div>
 
-						<div className="card-wrap wow animate__fadeInLeft" id="2">
+						<div className="card-wrap wow animate__fadeInLeft" onClick={ onBars } id="3">
 							<h3 className="sub-title">Front-End</h3>
 							<div className="lang-wrapper">
 								<div className="lang-wrap">
@@ -72,7 +72,7 @@ const Bar = () => {
 							</div>
 						</div>
 
-						<div className="card-wrap wow animate__fadeInLeft" id="3">
+						<div className="card-wrap wow animate__fadeInLeft" onClick={ onBars } id="4">
 							<h3 className="sub-title">Back-End</h3>
 							<div className="lang-wrapper">
 								<div className="lang-wrap">

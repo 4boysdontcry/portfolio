@@ -20,8 +20,9 @@ import Footer from './components/Footer'
 const App = () => {
   // 애니메이션 자바스크립트 여기서
   const [descChg, setDescChg] = useState([])
+  const [portList, setPortList] = useState([])
   const [err, setErr] = useState(null)
-  
+  const [err2, setErr2] = useState(null)
   
   useEffect(() => {
     new WOW.WOW().init();
@@ -43,17 +44,41 @@ const App = () => {
     asyncFn()
   }, [])
 
+  useEffect( () => {
+    const asyncFn = async () => {
+      try{
+        const { data } = await axios('/json/port.json')
+        setPortList(data)
+      }
+      catch(err2){
+        setErr2(err2)
+      }
+      finally{
+        return () => { console.log('end') }
+      }
+    }
+    asyncFn()
+  }, [])
+
 	const handleChange = query => {
 		setDescChg( descChg.click( v => v.title.includes(query) ) )
 	}
 
+  const listChange = query => {
+		setPortList( portList.filter( v => v.title.includes(query) ) )
+	}
+
+  const onBars = () => {
+    console.log('클릭')
+  }
+  
 	return (
     <div className="app-wrapper">
       <Header />
       <Sidebar />
       <Main />
-      <Skills handleChange={handleChange} lists={descChg} />
-      <Port />
+      <Skills handleChange={handleChange} onClick={ onBars } lists={descChg} />
+      <Port listChange={listChange} list2={portList}/>
       <Contact />
       <Footer />
     </div>
