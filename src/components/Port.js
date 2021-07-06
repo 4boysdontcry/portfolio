@@ -21,9 +21,15 @@ const Port = ({ list2 }) => {
 	return (
 		<div id="portfolio" className="port-wrapper">
 			<h3 className="title">PORTFOLIO</h3>
+      <ul className="menu-wrapper w-100">
+        <li className="menu all">ALL</li>
+        <li className="menu pub">PUBLISHING</li>
+        <li className="menu front">FRONT-END</li>
+        <li className="menu back">BACK-END</li>
+      </ul>
 			<div className="port-wrap">
       {
-        list2.map(v => <PortList className="wow fadeInUp" list2={v} key={ v.id } /> )
+        list2.map(v => <PortList list2={v} key={ v.id } /> )
       }
 			</div>
 		</div>

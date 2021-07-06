@@ -10,6 +10,25 @@
   color: #254e58;
   margin-bottom: 1em;
 }
+.port-wrapper .menu-wrapper {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.port-wrapper .menu-wrapper .menu {
+  margin: 0 1em;
+  color: #508886;
+  font-size: 1.125em;
+  font-weight: bold;
+  text-decoration: underline;
+  cursor: pointer;
+}
+.menu-wrapper .menu:hover {
+  transition: all .5s;
+  transform: scale(1.1);
+  color: #feffff;
+}
 
 .port-wrapper .port-wrap {
   width: 90%;
