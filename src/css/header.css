@@ -27,6 +27,7 @@
 }
 .header-wrapper h1 {
   font-size: 1.725em;
+  text-shadow: 0px 0px 5px rgba(0, 0, 0, .5);
 }
 
 .header-wrapper .icon-wrapper {
@@ -34,8 +35,12 @@
 }
 .header-wrapper .header-icon {
   cursor: pointer;
+  text-shadow: 0px 0px 5px rgba(0, 0, 0, .5);
 }
-
+.header-wrapper .header-icon:hover {
+  transition: all .5s;
+  transform: scale(1.2);
+}
 
 
 @media screen and (max-width: 768px) {

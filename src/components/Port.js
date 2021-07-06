@@ -20,7 +20,7 @@ const Port = ({ list2 }) => {
 
 	return (
 		<div id="portfolio" className="port-wrapper">
-			<h3 className="title">PORTFOLIO</h3>
+			<h3 className="cate">PORTFOLIO</h3>
       <ul className="menu-wrapper w-100">
         <li className="menu all">ALL</li>
         <li className="menu pub">PUBLISHING</li>

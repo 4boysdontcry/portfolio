@@ -1,7 +1,7 @@
 .skill-container {
 	width: 100%;
 	padding: 3em;
-	background-color: #88bdbc;
+	background-color: #def2f1;
 	color: #254e58;
 	display: flex;
 	flex-direction: column;
@@ -11,15 +11,65 @@
 	font-size: 3em;
 	text-align: center;
 	font-weight: bolder;
-	margin-bottom: 1em;
+	margin-bottom: 2em;
+}
+.skill-wrap {
+  width: 100%;
+  display: flex;
+  /* flex-direction: column; */
 }
 
-.skill-wrapper{
-	width: 90%;
-	height: 100%;
-	margin-left: 10%;
-	display: flex;
-	align-items: center;
-	justify-content: flex-start;
-	position: relative;
+.skill-wrap .card-wrapper {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+.skill-wrap .card-wrap {
+  width: 100%;
+}
+.card-wrap .sub-title {
+  text-align: center;
+  font-size: 2em;
+  font-weight: bold;
+  color: #508886;
+  margin-bottom: 1em;
+}
+
+.skill-wrap .title-wrap {
+  font-size: 2em;
+  color: #feffff;
+  font-weight: bolder;
+}
+.skill-wrap .lang-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  margin-bottom: 6em;
+}
+.skill-wrap .lang-wrap {
+  width: 25%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 1em;
+  border-bottom: 1px solid #bbb;
+}
+.lang-wrap .lang-img {
+  max-width: 60px;
+}
+.lang-img img {
+  width: 100%;
+}
+.lang-wrap .skill-desc {
+  margin-top: .5em;
+  font-weight: bold;
+}
+
+
+@media screen and (max-width: 768px) {
+  
 }

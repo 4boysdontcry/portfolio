@@ -1,9 +1,9 @@
 .port-wrapper {
-  background-color: #9bbfc7;
+  background-color: #def2f1;
   width: 100%;
   padding: 3em;
 }
-.port-wrapper .title {
+.port-wrapper .cate {
   text-align: center;
   font-weight: bold;
   font-size: 3em;
