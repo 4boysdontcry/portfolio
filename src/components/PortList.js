@@ -14,13 +14,9 @@ import '../css/portList.css'
 const PortList = ({ list2: v }) => {
 
   useEffect(() => {
-    console.log(v)
     new WOW.WOW().init();
   }, []);
 
-  const onChange = (v) => {
-    
-  }
 
 	return (
     <div className="port wow animate__zoomIn">

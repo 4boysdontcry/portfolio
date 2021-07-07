@@ -1,9 +1,7 @@
 import React, { useState, useCallback, useEffect, useMemo } from 'react'
 import { render } from 'react-dom';
-import Container from 'react-bootstrap/Container'
 import styled, { css } from 'styled-components'
 import 'bootstrap/dist/css/bootstrap.min.css';
-import axios from 'axios';
 import WOW from 'wowjs'
 import * as Scroll from 'react-scroll';
 import { Link, Element, Events, animateScroll as scroll, scrollSpy, scroller } from 'react-scroll'
@@ -20,14 +18,10 @@ import Footer from './components/Footer'
 
 
 const App = () => {
-  /* ******************* data ********************* */
-  
+
   useEffect(() => {
     new WOW.WOW().init();
   }, []);
-  
-  
-  
 
   
   /* ******************* scroll ********************* */

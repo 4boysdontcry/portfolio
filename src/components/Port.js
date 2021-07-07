@@ -1,10 +1,9 @@
-import axios from "axios";
 import React, { useCallback, useEffect, useState } from 'react';
 import styled, { css } from 'styled-components'
 import 'bootstrap/dist/css/bootstrap.css';
+import axios from "axios";
 import WOW from 'wowjs'
 
-import { Badge } from 'react-bootstrap'
 import PortList from './PortList'
 
 
@@ -24,7 +23,6 @@ const Port = ({ list2 }) => {
 	})
 	
 	useEffect( () => {
-  
 		const asyncFn = async () => {
 			try {
 				const { data } = await axios('/json/port.json')
