@@ -18,10 +18,16 @@ import Footer from './components/Footer'
 
 
 const App = () => {
-  // 애니메이션 자바스크립트 여기서
+  // 자바스크립트 여기서
   const [portList, setPortList] = useState([])
+  const [err, setErr] = useState(null)
+  const [menuClick, setMenuClick] = useState([])
   const [err2, setErr2] = useState(null)
   
+  useEffect(() => {
+    setMenuClick(onClickAct)
+  },[])
+
   useEffect(() => {
     new WOW.WOW().init();
   }, []);
@@ -32,8 +38,8 @@ const App = () => {
         const { data } = await axios('/json/port.json')
         setPortList(data)
       }
-      catch(err2){
-        setErr2(err2)
+      catch(err){
+        setErr(err)
       }
       finally{
         return () => { console.log('end') }
@@ -42,18 +48,18 @@ const App = () => {
     asyncFn()
   }, [])
 
-  const listChange = query => {
-		setPortList( portList.filter( v => v.cate.includes(query) ) )
+  const listChange = value => {
+		setPortList( portList.filter( v => v.cate.includes(value) ) )
 	}
-
-  const onBars = () => {
-    console.log('클릭')
-  }
   
+  const onClickAct = () => {
+
+  }
+
 	return (
     <div className="app-wrapper">
       <Header />
-      <Sidebar />
+      <Sidebar onClick={onClickAct} />
       <Main />
       <Skills />
       <Port listChange={listChange} list2={portList}/>

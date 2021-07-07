@@ -11,14 +11,14 @@ import '../css/sidebar.css'
 
 /* ****************** component ****************** */
 
-const Sidebar = () => {
+const Sidebar = ({onClickAct}) => {
   return (
     <div className="side-wrapper">
       <div className="bar">
-        <div className="box"><a href="#main" className="title">HOME</a></div>
-        <div className="box"><a href="#skills" className="title">SKILLS</a></div>
-        <div className="box"><a href="#portfolio" className="title">PORTFOLIO</a></div>
-        <div className="box"><a href="#contact" className="title">CONTACT</a></div>
+        <div className="box" onClick={onClickAct}><a href="#main" className="title">MAIN</a></div>
+        <div className="box" onClick={onClickAct}><a href="#skills" className="title">SKILLS</a></div>
+        <div className="box" onClick={onClickAct}><a href="#portfolio" className="title">PORTFOLIO</a></div>
+        <div className="box" onClick={onClickAct}><a href="#contact" className="title">CONTACT</a></div>
       </div>
     </div>
   );

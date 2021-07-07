@@ -16,7 +16,6 @@
 .skill-wrap {
   width: 100%;
   display: flex;
-  /* flex-direction: column; */
 }
 
 .skill-wrap .card-wrapper {
@@ -32,16 +31,10 @@
 }
 .card-wrap .sub-title {
   text-align: center;
-  font-size: 2em;
+  font-size: 1.75em;
   font-weight: bold;
   color: #508886;
-  margin-bottom: 1em;
-}
-
-.skill-wrap .title-wrap {
-  font-size: 2em;
-  color: #feffff;
-  font-weight: bolder;
+  margin-bottom: 2em;
 }
 .skill-wrap .lang-wrapper {
   display: flex;
@@ -55,7 +48,7 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding-bottom: 1em;
+  padding-bottom: 2em;
   border-bottom: 1px solid #bbb;
 }
 .lang-wrap .lang-img {
