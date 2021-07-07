@@ -1,17 +1,17 @@
 [
-  {"id": 1, "cate": "Publishing", "src": "/img/lge.png", "title": "LGe clone coding",  "badge1": "HTML5", "badge2": "CSS3", "hrefgit": "https://github.com/4boysdontcry/04-LGe", "hrefsite": "https://jth-lge.web.app"},
+  {"id": 1, "cate": "{Publishing, All}", "src": "/img/lge.png", "title": "LGe clone coding",  "badge1": "HTML5", "badge2": "CSS3", "hrefgit": "https://github.com/4boysdontcry/04-LGe", "hrefsite": "https://jth-lge.web.app"},
 
-  {"id": 2, "cate": "Publishing", "src": "/img/jeju.png", "title": "JEJU dream tower clone coding",  "badge1": "HTML5", "badge2": "Javascript", "hrefgit": "https://github.com/4boysdontcry/09.jeju", "hrefsite": "https://jth-jeju.web.app"},
+  {"id": 2, "cate": "{Publishing, All}", "src": "/img/jeju.png", "title": "JEJU dream tower clone coding",  "badge1": "HTML5", "badge2": "Javascript", "hrefgit": "https://github.com/4boysdontcry/09.jeju", "hrefsite": "https://jth-jeju.web.app"},
 
-  {"id": 3, "cate": "Publishing", "src": "/img/arsenal.png", "title": "ARSENAL clone coding",  "badge1": "HTML5", "badge2": "Javascript", "hrefgit": "https://github.com/4boysdontcry/arsenal-self", "hrefsite": "https://jth-arsenal.web.app"},
+  {"id": 3, "cate": "{Publishing, All}", "src": "/img/arsenal.png", "title": "ARSENAL clone coding",  "badge1": "HTML5", "badge2": "Javascript", "hrefgit": "https://github.com/4boysdontcry/arsenal-self", "hrefsite": "https://jth-arsenal.web.app"},
 
-  {"id": 3, "cate": "Front-End", "src": "/img/js-weather.png", "title": "JS WEATHER",  "badge1": "HTML5", "badge2": "Javascript", "badge3": "Firebase", "hrefgit": "https://github.com/4boysdontcry/10.weather", "hrefsite": "https://jth-weather.web.app"},
+  {"id": 3, "cate": "{Front-End, All}", "src": "/img/js-weather.png", "title": "JS WEATHER",  "badge1": "HTML5", "badge2": "Javascript", "badge3": "Firebase", "hrefgit": "https://github.com/4boysdontcry/10.weather", "hrefsite": "https://jth-weather.web.app"},
 
-  {"id": 4, "cate": "Front-End", "src": "/img/search.png", "title": "REACT SEARCH",  "badge1": "React", "badge2": "Firebase", "badge3": "Kakao API", "hrefgit": "https://github.com/4boysdontcry/24.react-market", "hrefsite": "https://jth-search.web.app"},
+  {"id": 4, "cate": "{Front-End, All}", "src": "/img/search.png", "title": "REACT SEARCH",  "badge1": "React", "badge2": "Firebase", "badge3": "Kakao API", "hrefgit": "https://github.com/4boysdontcry/24.react-market", "hrefsite": "https://jth-search.web.app"},
 
-  {"id": 5, "cate": "Front-End", "src": "/img/vue-weather2.png", "title": "VUE WEATHER",  "badge1": "vue.js", "badge2": "Firebase", "hrefgit": "https://github.com/4boysdontcry/18.vue-weather", "hrefsite": "https://jth-vue-weather.web.app"},
+  {"id": 5, "cate": "{Front-End, All}", "src": "/img/vue-weather2.png", "title": "VUE WEATHER",  "badge1": "vue.js", "badge2": "Firebase", "hrefgit": "https://github.com/4boysdontcry/18.vue-weather", "hrefsite": "https://jth-vue-weather.web.app"},
 
-  {"id": 6, "cate": "Back-End", "src": "/img/fb-chat.png", "title": "FIREBASE CHAT", "badge1": "Firebase", "hrefgit": "https://github.com/4boysdontcry/11.fb-board", "hrefsite": "https://jth-board.web.app"},
+  {"id": 6, "cate": "{Back-End, All}", "src": "/img/fb-chat.png", "title": "FIREBASE CHAT", "badge1": "Firebase", "hrefgit": "https://github.com/4boysdontcry/11.fb-board", "hrefsite": "https://jth-board.web.app"},
 
-  {"id": 7, "cate": "Back-End", "src": "/img/gbook.png", "title": "GUEST BOOK", "badge1": "node.js", "badge2": "Express", "badge3": "MySQL", "hrefgit": "https://github.com/4boysdontcry/14.gbook", "hrefsite": "http://3.36.198.155:3000/gbook"}
+  {"id": 7, "cate": "{Back-End, All}", "src": "/img/gbook.png", "title": "GUEST BOOK", "badge1": "node.js", "badge2": "Express", "badge3": "MySQL", "hrefgit": "https://github.com/4boysdontcry/14.gbook", "hrefsite": "http://3.36.198.155:3000/gbook"}
 ]

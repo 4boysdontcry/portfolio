@@ -18,6 +18,7 @@ import Port from './components/Port'
 import Contact from './components/Contact'
 import Footer from './components/Footer'
 
+
 const App = () => {
   /* ******************* data ********************* */
   const [portList, setPortList] = useState([])
@@ -54,6 +55,7 @@ const App = () => {
   var scroll    = Scroll.animateScroll;
   var scrollSpy = Scroll.scrollSpy;
 
+
   /* ******************* components ********************* */
 	return (
     <div className="app-wrapper">
@@ -61,11 +63,12 @@ const App = () => {
       <Sidebar />
       <Main />
       <Skills />
-      <Port listChange={listChange} list2={portList}/>
+      <Port onListChange={listChange} list2={portList}/>
       <Contact />
       <Footer />
     </div>
 	);
-}
+  }
+
 
 export default App;

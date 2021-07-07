@@ -12,7 +12,7 @@ import '../css/port.css'
 
 
 /* ****************** component ****************** */
-const Port = ({ list2 }) => {
+const Port = ({ list2, onListChange }) => {
 
   useEffect(() => {
     new WOW.WOW().init();
@@ -22,14 +22,14 @@ const Port = ({ list2 }) => {
 		<div id="portfolio" className="port-wrapper">
 			<h3 className="cate">PORTFOLIO</h3>
       <ul className="menu-wrapper w-100">
-        <li className="menu all" >ALL</li>
-        <li className="menu pub" >PUBLISHING</li>
-        <li className="menu front" >FRONT-END</li>
-        <li className="menu back" >BACK-END</li>
+        <li className="menu" onClick={onListChange} value="All">ALL</li>
+        <li className="menu" onClick={onListChange} value="Publishing">PUBLISHING</li>
+        <li className="menu" onClick={onListChange} value="Front-End">FRONT-END</li>
+        <li className="menu" onClick={onListChange} value="Back-End">BACK-END</li>
       </ul>
 			<div className="port-wrap">
       {
-        list2.map(v => <PortList list2={v} key={ v.id } /> )
+        list2.map(v => <PortList list2={v} key={ v.id } onListChange={onListChange} /> )
       }
 			</div>
 		</div>

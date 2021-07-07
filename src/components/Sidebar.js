@@ -1,10 +1,9 @@
 import React from 'react';
 import styled, { css } from 'styled-components'
 import 'bootstrap/dist/css/bootstrap.min.css';
-import * as Icon from 'react-bootstrap-icons/dist';
+import * as Scroll from 'react-scroll';
+import { Link, Element, Events, animateScroll as scroll, scrollSpy, scroller } from 'react-scroll'
 
-
-import { Navbar, Nav, Container } from 'react-bootstrap'
 
 /* ****************** styled ****************** */
 import '../css/sidebar.css'
