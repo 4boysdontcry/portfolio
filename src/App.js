@@ -1,9 +1,12 @@
 import React, { useState, useCallback, useEffect, useMemo } from 'react'
+import { render } from 'react-dom';
 import Container from 'react-bootstrap/Container'
 import styled, { css } from 'styled-components'
 import 'bootstrap/dist/css/bootstrap.min.css';
 import axios from 'axios';
 import WOW from 'wowjs'
+import * as Scroll from 'react-scroll';
+import { Link, Element, Events, animateScroll as scroll, scrollSpy, scroller } from 'react-scroll'
 
 import './css/app.css'
 
@@ -15,23 +18,15 @@ import Port from './components/Port'
 import Contact from './components/Contact'
 import Footer from './components/Footer'
 
-
-
 const App = () => {
-  // 자바스크립트 여기서
+  /* ******************* data ********************* */
   const [portList, setPortList] = useState([])
   const [err, setErr] = useState(null)
-  const [menuClick, setMenuClick] = useState([])
-  const [err2, setErr2] = useState(null)
   
-  useEffect(() => {
-    setMenuClick(onClickAct)
-  },[])
-
   useEffect(() => {
     new WOW.WOW().init();
   }, []);
-
+  
   useEffect( () => {
     const asyncFn = async () => {
       try{
@@ -47,26 +42,30 @@ const App = () => {
     }
     asyncFn()
   }, [])
-
+  
   const listChange = value => {
-		setPortList( portList.filter( v => v.cate.includes(value) ) )
+    setPortList( portList.filter( v => v.cate.includes(value) ) )
 	}
   
-  const onClickAct = () => {
+  /* ******************* scroll ********************* */
+  var Link      = Scroll.Link;
+  var Element   = Scroll.Element;
+  var Events    = Scroll.Events;
+  var scroll    = Scroll.animateScroll;
+  var scrollSpy = Scroll.scrollSpy;
 
-  }
-
+  /* ******************* components ********************* */
 	return (
     <div className="app-wrapper">
       <Header />
-      <Sidebar onClick={onClickAct} />
+      <Sidebar />
       <Main />
       <Skills />
       <Port listChange={listChange} list2={portList}/>
       <Contact />
       <Footer />
     </div>
-	)
+	);
 }
 
 export default App;
