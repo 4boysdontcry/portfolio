@@ -1,4 +1,5 @@
 import React, { useCallback, useEffect, useState } from 'react';
+import _ from 'lodash';
 import styled, { css } from 'styled-components'
 import 'bootstrap/dist/css/bootstrap.css';
 import axios from "axios";
@@ -12,15 +13,15 @@ import '../css/port.css'
 
 
 /* ****************** component ****************** */
-const Port = ({ list2 }) => {
+const Port = () => {
 	
 	const [portList, setPortList] = useState([])
 	const [filterList, setFilterList] = useState([])
 	const [err, setErr] = useState(null)
 	
 	useEffect(() => {
-		new WOW.WOW().init();
-	})
+		// new WOW.WOW().init();
+	}, [])
 	
 	useEffect( () => {
 		const asyncFn = async () => {
@@ -40,11 +41,27 @@ const Port = ({ list2 }) => {
 	}, [])
 	
 	const onListChange = useCallback(e => {
+    console.log(portList)
 		let search = e.target.dataset['filter']
-		if(search === '') setFilterList(portList)
+    let newArr = [];
+    if(search === '') {
+      //newArr = _.cloneDeep(portList)
+    }
+    else {
+      //newArr = portList.filter(v => v.cate === search)
+    }
+    console.log(newArr)
+    // console.log(newArr)
+    /*
+		if(search === '') {
+      setFilterList([...portList])
+    }
 		else setFilterList( portList.filter( v => v.cate === search ) )
+    console.log(filterList)
+    */
 	}, [])
 
+  
 	return (
 		<div id="portfolio" className="port-wrapper">
 			<h3 className="cate">PORTFOLIO</h3>
