@@ -11,9 +11,10 @@ import '../css/portList.css'
 
 
 /* ****************** component ****************** */
-const PortList = ({ list2: v, onListChange }) => {
+const PortList = ({ list2: v }) => {
 
   useEffect(() => {
+    console.log(v)
     new WOW.WOW().init();
   }, []);
 
@@ -22,7 +23,7 @@ const PortList = ({ list2: v, onListChange }) => {
   }
 
 	return (
-    <div className="port wow animate__zoomIn" onChange={onListChange}>
+    <div className="port wow animate__zoomIn">
         <div className="list-case">
           <div className="img-wrapper">
             <img src={v.src} alt="이미지" />

@@ -21,32 +21,14 @@ import Footer from './components/Footer'
 
 const App = () => {
   /* ******************* data ********************* */
-  const [portList, setPortList] = useState([])
-  const [err, setErr] = useState(null)
   
   useEffect(() => {
     new WOW.WOW().init();
   }, []);
   
-  useEffect( () => {
-    const asyncFn = async () => {
-      try{
-        const { data } = await axios('/json/port.json')
-        setPortList(data)
-      }
-      catch(err){
-        setErr(err)
-      }
-      finally{
-        return () => { console.log('end') }
-      }
-    }
-    asyncFn()
-  }, [])
   
-  const listChange = value => {
-    setPortList( portList.filter( v => v.cate.includes(value) ) )
-	}
+  
+
   
   /* ******************* scroll ********************* */
   var Link      = Scroll.Link;
@@ -63,7 +45,7 @@ const App = () => {
       <Sidebar />
       <Main />
       <Skills />
-      <Port onListChange={listChange} list2={portList}/>
+      <Port />
       <Contact />
       <Footer />
     </div>
