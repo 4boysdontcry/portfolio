@@ -1,0 +1,33 @@
+.navi-wrapper {
+  display: none;
+}
+.navi-wrapper .menu-bar {
+  position: relative;
+  font-size: 2em;
+}
+.navi-wrapper .menu-bar:hover {
+  transition: all .5s;
+  transform: rotateY(180deg);
+  color: #17252a;
+}
+.navi-wrapper .menu-bar .navi-wrap {
+  position: absolute;
+  background-color: white;
+  color: #17252a;
+  top: 100%;
+  text-align: center;
+  display: none;      /* display: flex로 바뀌어야함 */
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.navi-wrap .navi {
+  padding: 1em;
+  font-weight: bold;
+}
+
+
+
+@media screen and (max-width: 992px) {
+  .navi-wrapper {display: block;}
+}

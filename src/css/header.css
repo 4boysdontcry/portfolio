@@ -43,6 +43,8 @@
 }
 
 
-@media screen and (max-width: 768px) {
-
+@media screen and (max-width: 992px) {
+  .logo-wrapper h1 {display: none;}
+  .icon-wrapper {display: none;}
+  
 }

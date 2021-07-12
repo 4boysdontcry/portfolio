@@ -1,15 +1,24 @@
-import React from 'react';
+import React, {useCallback} from 'react';
 import styled, { css } from 'styled-components'
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'react-bootstrap-icons'
 
 /* ****************** styled ****************** */
 import '../css/header.css'
-
+import Navi from './Navi'
 
 /* ****************** component ****************** */
 
 const Header = () => {
+  const menu = document.getElementsByClassName("menu-bar")
+
+  // function onShow() {
+  //   this.find('.navi-wrap').css("display", "flex")
+  // }
+
+  const onShowNavi = useCallback(() => {
+		this.find('.navi-wrap').css("display", "flex")
+	}, [])
 
   return (
     <div className="header-wrapper">
@@ -23,6 +32,7 @@ const Header = () => {
            <i className="fa fa-github header-icon" />
           </a>
         </div>
+        <Navi onShowNavi={onShowNavi} />
       </div>
     </div>
   );
