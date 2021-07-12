@@ -26,6 +26,7 @@ const Contact = () => {
           <div className="call wow animate__backInLeft"><a href="https://github.com/4boysdontcry" target="_blank"><i className="fa fa-github" /> github.com/4boysdontcry</a></div>
         </div>
       </div>
+      <div className="move-box"><a href="#main">Back to Top</a></div>
     </div>
   );
 }
