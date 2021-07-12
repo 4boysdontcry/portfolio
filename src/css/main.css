@@ -45,7 +45,13 @@
 	font-size: 1.5em;
 	font-weight: bold;
 }
-.article > span {
+.main-wrapper .article2 {
+  margin-top: 1em;
+	color: #254e58;
+	font-size: 1.5em;
+	font-weight: bold;
+}
+.article > .myname {
 	color: #17152a;
 	font-size: 1.625em;
 	font-weight: bolder;
@@ -102,3 +108,10 @@
 }
 
 
+@media screen and (max-width: 992px) {
+  .main-wrapper .text-wrap {width: 100%; padding: 1em;}
+  .main-wrapper .ment {font-size: 2em;}
+  .text-wrap .subject-wrapper .article {font-size: 1.25em;}
+  .text-wrap .subject-wrapper .article2 {font-size: 1.25em;}
+  .article > .myname {font-size: 1.125em;}
+}

@@ -58,3 +58,7 @@
   background-color: #3ca7a4;
 }
 
+
+@media screen and (max-width: 992px) {
+  .port {width: 100%;}
+}

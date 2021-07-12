@@ -20,7 +20,9 @@ const Main = () => {
 					</div>
 					<div className="subject-wrapper wow animate__fadeInLeft animate__delay-1s">
 						<p className="article">
-							안녕하세요, 프론트엔드 개발자 <span>황준택</span>입니다. <br />
+							프론트엔드 개발자<span className="myname">황준택</span>입니다. <br />
+						</p>
+						<p className="article2">
 							효율적인 코드를 위해 공부하며, 더 좋은 UX를 위해 노력합니다.
 						</p>
 					</div>

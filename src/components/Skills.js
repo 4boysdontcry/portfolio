@@ -26,19 +26,19 @@ const Skills = ({ lists, onBars }) => {
 								<div className="lang-img">
 									<img src="/img/html.png" alt="html" />
 								</div>
-                <div className="skill-desc">반응형 웹, 페이지 구조화</div>
+                <div className="skill-desc">반응형 웹 <br /> 페이지 구조화</div>
 							</div>
 							<div className="lang-wrap wow animate__backInUp">
 								<div className="lang-img">
 									<img src="/img/css.png" alt="css" />
 								</div>
-                <div className="skill-desc">스타일링과 애니메이션</div>
+                <div className="skill-desc">스타일링 <br /> 애니메이션</div>
 							</div>
 							<div className="lang-wrap wow animate__backInUp">
 								<div className="lang-img">
 									<img src="/img/jas.png" alt="javascript" />
 								</div>
-                <div className="skill-desc">네비게이션 구성, 탭메뉴 구현, ajax 통신</div>
+                <div className="skill-desc">동적화면 구현 <br /> ajax 통신</div>
 							</div>
 						</div>
 					</div>
@@ -50,19 +50,19 @@ const Skills = ({ lists, onBars }) => {
                 <div className="lang-img">
                 <img src="/img/react.png" alt="react" />
                 </div>
-              <div className="skill-desc">컴포넌트 페이지 구성</div>
+              <div className="skill-desc">virtual DOM 구현 <br /> 라이브러리 사용</div>
               </div>
               <div className="lang-wrap wow animate__backInUp">
                 <div className="lang-img">
                 <img src="/img/vuejs.png" alt="vue.js" />
                 </div>
-                <div className="skill-desc">컴포넌트 페이지 구성</div>
+                <div className="skill-desc">컴포넌트 구성 <br /> MVVM 패턴 이해</div>
               </div>
               <div className="lang-wrap wow animate__backInUp">
                 <div className="lang-img">
                 <img src="/img/scss.png" alt="scss" />
                 </div>
-                <div className="skill-desc">css를 대신하여 스타일링 가능</div>
+                <div className="skill-desc">스타일링 가능 <br /> 변수사용 가능</div>
               </div>
             </div>
           </div>
@@ -74,19 +74,19 @@ const Skills = ({ lists, onBars }) => {
                 <div className="lang-img">
                 <img src="/img/node.png" alt="node.js" />
                 </div>
-                <div className="skill-desc">single thread 화면 구현</div>
+                <div className="skill-desc">single thread 이해 <br /> 모듈 사용가능</div>
               </div>
               <div className="lang-wrap wow animate__backInUp">
                 <div className="lang-img">
                 <img src="/img/sql.png" alt="mysql" />
                 </div>
-                <div className="skill-desc">DB설계 경험</div>
+                <div className="skill-desc">DB설계 경험 <br /> 서버와의 통신 이해</div>
               </div>
               <div className="lang-wrap wow animate__backInUp">
                 <div className="lang-img">
                 <img src="/img/fire.png" alt="firebase" />
                 </div>
-                <div className="skill-desc">배포, 데이터베이스 사용</div>
+                <div className="skill-desc">배포 <br /> 데이터베이스 사용</div>
               </div>
             </div>
           </div>

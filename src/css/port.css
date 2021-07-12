@@ -42,3 +42,10 @@
   margin-left: auto;
   padding: 1em;
 }
+
+
+@media screen and (max-width: 992px) {
+  .port-wrapper {padding: 1em;}
+  .menu-wrapper {font-size: .7em;}
+  .port-wrapper .port-wrap {width: 100%; margin-left: none;}
+}
