@@ -20,10 +20,10 @@ const Main = () => {
 					</div>
 					<div className="subject-wrapper wow animate__fadeInLeft animate__delay-1s">
 						<p className="article">
-							프론트엔드 개발자<span className="myname">황준택</span>입니다. <br />
+							프론트엔드 개발자 <span className="myname">황준택</span>입니다. <br />
 						</p>
 						<p className="article2">
-							효율적인 코드를 위해 공부하며, 더 좋은 UX를 위해 노력합니다.
+							효율적인 코드와 더 좋은 UX를 위해 공부합니다.
 						</p>
 					</div>
 					<button className="bt-resume wow animate__heartBeat"><a href="https://www.notion.so/RESUME-5b9f93d48b104fd5b906b15fedcd16f0" target="_blank">Resume</a></button>
